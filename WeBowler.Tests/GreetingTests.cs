@@ -1,13 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using WeBowler.Domain;
 
 namespace WeBowler.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class GreetingTests
     {
-        [TestMethod]
+        [Test]
         public void Should_Build_DefaultGreeting()
         {
             var greeting = Greeting.Build();
